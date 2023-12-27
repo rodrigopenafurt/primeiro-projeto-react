@@ -6,7 +6,7 @@ import ReposList from "./components/ReposList";
 function App() {
 
   const [formularioEstaVisivel, setFormularioEstaVisivel] = useState(true)
-  const {nomeUsuario, setNomeUsuario} = useState('');
+  const [nomeUsuario, setNomeUsuario] = useState('');
 
   return (
     
@@ -15,8 +15,8 @@ function App() {
 
     {nomeUsuario.length > 4 && (
       <>
-      <Perfil nomeUsuario={nomeUsuario}/>
-      <ReposList nomeUsuario={nomeUsuario}/>
+        <Perfil nomeUsuario={nomeUsuario}/>
+        <ReposList nomeUsuario={nomeUsuario}/>
       </>
     )}
   
